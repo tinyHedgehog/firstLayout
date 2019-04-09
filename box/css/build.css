@@ -606,7 +606,10 @@ input[type=checkbox] {
 
 .button__tripleline {
   position: absolute;
-  top: 25%;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+      -ms-transform: translateY(-25%);
+          transform: translateY(-25%);
   left: 2.5%;
   width: 41.75%;
   min-height: 37px;
@@ -617,7 +620,10 @@ input[type=checkbox] {
 
 .button__tripleline_right-line {
   position: absolute;
-  top: 25%;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+      -ms-transform: translateY(-25%);
+          transform: translateY(-25%);
   left: 56%;
 }
 
@@ -628,7 +634,7 @@ input[type=checkbox] {
   background-color: rgb(237, 50, 55);
   -webkit-box-shadow: -3.5px 3.5px 0px 0px rgba(0, 0, 0, 0.12);
           box-shadow: -3.5px 3.5px 0px 0px rgba(0, 0, 0, 0.12);
-  min-width: 119px;
+  max-width: 119px;
   min-height: 37px;
   padding: 0 13px;
   border: none;

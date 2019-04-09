@@ -63,7 +63,8 @@
 
 .button__tripleline {
   position: absolute;
-  top: 25%;
+  top: 50%;
+  transform: translateY(-25%);
   left: 2.5%;
   width: 41.75%;
   min-height: 37px;
@@ -74,7 +75,8 @@
 
 .button__tripleline_right-line {
   position: absolute;
-  top: 25%;
+  top: 50%;
+  transform: translateY(-25%);
   left: 56%;
 }
 
@@ -84,7 +86,7 @@
   border-radius: 5px;
   background-color: rgb(237, 50, 55);
   box-shadow: -3.5px 3.5px 0px 0px rgba(0, 0, 0, 0.12);
-  min-width: 119px;
+  max-width: 119px;
   min-height: 37px;
   padding: 0 13px;
   border: none;
