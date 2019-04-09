@@ -1,0 +1,79 @@
+.community__card {
+  display: inline-block;
+  width: calc(100% / 3.1);
+  padding: 0 0 0 30px;
+  margin-bottom: 45px;
+  vertical-align: top;
+}
+
+.community__image {
+  float: left;
+  border-radius: 5px 0 5px 5px;
+  width: 70px;
+  height: 69px;
+  background-color: rgb(55, 52, 53);
+  box-shadow: -8.5px 9.5px 0px 0px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-image: url("../img/feedback.png");
+  background-size: 25px 25px;
+  background-position: 50% 50%;
+  margin: 0 25px 0 0;
+}
+
+.community__descrition-container {
+  padding-left: 100px;
+}
+
+.community__headline {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 21px;
+}
+
+.community__description {
+  font-size: 14px;
+  margin: 0 0 25px;
+  line-height: 1.6;
+}
+
+.community__more-info {
+  border: none;
+  min-width: 100px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgb(235, 235, 235);
+  background-image: url("../img/right_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.community__more-info-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.community__image_community {
+  background-image: url("../img/community.png");
+}
+
+.community__image_issue {
+  background-image: url("../img/issue.png");
+}
+
+@media screen and (max-width: 768px) {
+  .community__card {
+    width: 48%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .community__card {
+    width: 95%;
+    margin: 20px 0;
+  }
+}
