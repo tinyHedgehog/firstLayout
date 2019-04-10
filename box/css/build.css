@@ -634,7 +634,6 @@ input[type=checkbox] {
   background-color: rgb(237, 50, 55);
   -webkit-box-shadow: -3.5px 3.5px 0px 0px rgba(0, 0, 0, 0.12);
           box-shadow: -3.5px 3.5px 0px 0px rgba(0, 0, 0, 0.12);
-  max-width: 119px;
   min-height: 37px;
   padding: 0 13px;
   border: none;
@@ -678,6 +677,14 @@ input[type=checkbox] {
   border: 1px solid rgb(206, 206, 206);
   margin: 5px;
   padding: 0 15px;
+}
+
+.button__description-button_max-width {
+  max-width: 119px;
+}
+
+.button__description-button_min-width {
+  min-width: 119px;
 }
 
 @media screen and (max-width: 1050px) {
