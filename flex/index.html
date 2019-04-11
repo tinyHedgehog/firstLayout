@@ -27,27 +27,57 @@
                 <a class="header__navigation-link" href="">Home</a>
               </li>
               <li class="header__navigation-button">
-                <a class="header__navigation-link" href="">About</a>
+                <a class="header__navigation-link" href="#about">About</a>
               </li>
               <li class="header__navigation-button">
-                <a class="header__navigation-link" href="">Serices</a>
+                <a class="header__navigation-link" href="#serices">Serices</a>
               </li>
               <li class="header__navigation-button">
-                <a class="header__navigation-link" href="">Products</a>
+                <a class="header__navigation-link" href="#products">Products</a>
               </li>
               <li class="header__navigation-button">
-                <a class="header__navigation-link" href="">Contact</a>
+                <a class="header__navigation-link" href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
         </header>
+
         <div class="banner">
-          <img
-            title="Banner image"
-            class="banner__image"
-            alt="Banner image"
-            src="./img/banner_lady.jpg"
-          />
+          <span id="item-1"></span>
+          <span id="item-2"></span>
+          <span id="item-3"></span>
+          <div class="carousel-item item-1">
+            <img
+              title="Banner image"
+              class="banner__image"
+              alt="Banner image"
+              src="./img/banner_lady.jpg"
+            />
+            <a class="arrow arrow-prev" href="#item-3"></a>
+            <a class="arrow arrow-next" href="#item-2"></a>
+          </div>
+
+          <div class="carousel-item item-2">
+            <img
+              title="Banner image"
+              class="banner__image"
+              alt="Banner image"
+              src="https://placekitten.com/g/900/700"
+            />
+            <a class="arrow arrow-prev" href="#item-1"></a>
+            <a class="arrow arrow-next" href="#item-3"></a>
+          </div>
+
+          <div class="carousel-item item-3">
+            <img
+              title="Banner image"
+              class="banner__image"
+              alt="Banner image"
+              src="./img/banner_neo.jpg"
+            />
+            <a class="arrow arrow-prev" href="#item-2"></a>
+            <a class="arrow arrow-next" href="#item-1"></a>
+          </div>
         </div>
 
         <section class="section-description">
@@ -67,7 +97,7 @@
           </button>
         </div>
 
-        <section class="section-description">
+        <section class="section-description" id="about">
           <h2 class="section-description__headline">Vivamus vest</h2>
           <p class="section-description__description">
             Sed adipiscing ornare risus. Morbi est est, blandit sit amet,
@@ -127,7 +157,10 @@
           </div>
         </div>
 
-        <section class="section-description section-description_border-top">
+        <section
+          class="section-description section-description_border-top"
+          id="serices"
+        >
           <h2 class="section-description__headline">Cras iaculis</h2>
           <p
             class="section-description__description section-description__description_margin-bottom"
@@ -208,7 +241,10 @@
           </div>
         </div>
 
-        <section class="section-description section-description_border-top">
+        <section
+          class="section-description section-description_border-top"
+          id="products"
+        >
           <h2 class="section-description__headline">Nunc digniss</h2>
           <p
             class="section-description__description section-description__description_margin-bottom-second"
@@ -270,7 +306,7 @@
           </button>
         </div>
       </div>
-      <div class="footer">
+      <div class="footer" id="contact">
         Copyright(c) website name. <br />
         Designed by: www.alltemplateneeds.com / Images from:
         www.wallpaperswide.com

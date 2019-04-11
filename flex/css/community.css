@@ -65,6 +65,11 @@
   background-repeat: no-repeat;
   background-position: 100%;
   color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.community__more-info-link:hover {
+  color: rgb(237, 50, 55);
 }
 
 .community__image_community {
