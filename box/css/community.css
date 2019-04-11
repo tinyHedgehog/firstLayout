@@ -42,22 +42,20 @@
   line-height: 1.6;
 }
 
-.community__more-info {
+.community__more-info-link {
+  display: inline-block;
   border: none;
   min-width: 100px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 1px;
   background-color: rgb(235, 235, 235);
   background-image: url("../img/right_arrow.png");
   background-repeat: no-repeat;
   background-position: 100%;
-}
-
-.community__more-info-link {
-  text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
@@ -73,6 +71,11 @@
   .community__card {
     width: 48%;
     margin: 20px 0;
+  }
+
+  .community__image {
+    box-shadow: none;
+    border: 1px solid rgb(206, 206, 206);
   }
 }
 
