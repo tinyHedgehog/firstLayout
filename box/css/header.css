@@ -52,6 +52,7 @@
 }
 
 .menu-button__bars {
+  display: block;
   width: 35px;
   height: 5px;
   background-color: #333;
