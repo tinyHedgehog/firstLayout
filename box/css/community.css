@@ -1,14 +1,18 @@
+.community {
+  padding-bottom: 11px;
+}
+
 .community__card {
   display: inline-block;
   width: calc(100% / 3.1);
-  padding: 0 0 0 30px;
+  padding: 0 0 0 28px;
   margin-bottom: 45px;
   vertical-align: top;
 }
 
 .community__image {
   float: left;
-  border-radius: 5px 0 5px 5px;
+  border-radius: 10px 0 10px 10px;
   width: 70px;
   height: 69px;
   background-color: rgb(55, 52, 53);
@@ -29,6 +33,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0 0 21px;
+  line-height: 1;
 }
 
 .community__description {
@@ -64,7 +69,7 @@
   background-image: url("../img/issue.png");
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .community__card {
     width: 48%;
     margin: 20px 0;
