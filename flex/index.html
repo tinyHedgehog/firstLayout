@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./css/build.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -90,12 +90,35 @@
         </section>
 
         <div class="button button-tripleline_margin-bottom">
-          <button
-            class="button__description-button button__description-button_max-width"
+          <label
+            class="button__description-button button__description-button_max-width expand__label"
+            for="toggle__first-part"
           >
             Read more
-          </button>
+          </label>
         </div>
+
+        <div class="expandable-panel">
+          <input
+            class="expand__input"
+            id="toggle__first-part"
+            type="checkbox"
+            checked
+          />
+          <div class="expandable-panel__content expandable-panel__content_first-background">
+            <section class="section-description">
+              <h2 class="section-description__headline">Save your doggy</h2>
+              <p class="section-description__description">
+                The story focuses on John Wick (Reeves), searching for the men </br>
+                who broke into his home, stole his vintage car and killed his </br>
+                puppy, which serves as a memento of his recently deceased wife
+                (Moynahan).
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <!-- <label class="expand__label" >Hidden Kitten</label> -->
 
         <section class="section-description" id="about">
           <h2 class="section-description__headline">Vivamus vest</h2>
@@ -299,12 +322,33 @@
         </div>
 
         <div class="button button-tripleline_margin-bottom-second">
-          <button
+          <label
             class="button__description-button button__description-button_max-width"
+            for="toggle__second-part"
           >
             Read more
-          </button>
+        </label>
         </div>
+
+        <div class="expandable-panel">
+            <input
+              class="expand__input"
+              id="toggle__second-part"
+              type="checkbox"
+              checked
+            />
+            <div class="expandable-panel__content expandable-panel__content_second-background">
+              <section class="section-description">
+                <h2 class="section-description__headline">Some kittens</h2>
+                <p class="section-description__description">
+                    Praesent dapibus, neque id cursus faucibus, <br />
+                    tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam
+                    erat <br />
+                    volutpat. Nam dui mi, tincidunt quis, accumsan porttitor
+                </p>
+              </section>
+            </div>
+          </div>
       </div>
       <div class="footer" id="contact">
         Copyright(c) website name. <br />

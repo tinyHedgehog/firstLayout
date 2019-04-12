@@ -231,6 +231,48 @@
   min-width: 119px;
 }
 
+.expand__input {
+  display: none;
+  visibility: hidden;
+}
+
+.expandable-panel__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+  transition: height 0.5s;
+  background: url(http://placekitten.com/g/600/300);
+  color: rgb(236, 236, 236);
+}
+
+.expandable-panel__content_first-background {
+  background: url("../img/save_doggy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.expandable-panel__content_second-background {
+  background: url(http://placekitten.com/g/600/300);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(237, 50, 55);
+}
+
+#toggle__first-part:checked ~ .expandable-panel__content {
+  height: 400px;
+}
+
+#toggle__second-part:checked ~ .expandable-panel__content {
+  height: 400px;
+}
+
 @media screen and (max-width: 1050px) {
   .button__description-button:after,
   .button__description-button:before {
