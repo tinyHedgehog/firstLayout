@@ -31,6 +31,7 @@
 
 .article__image-wrap {
   max-width: 100%;
+  height: 147px;
   overflow: hidden;
 }
 

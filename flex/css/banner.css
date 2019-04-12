@@ -3,7 +3,6 @@
   width: 95%;
   min-height: 380px;
   max-width: 95%;
-  max-height: 380px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 5px 0 5px 5px;
@@ -28,16 +27,18 @@
   padding: 12px;
 }
 
-.arrow-prev {
+.arrow-prev,
+.arrow-next {
   position: absolute;
   top: 50%;
+}
+
+.arrow-prev {
   left: 15px;
   transform: translateY(-50%) rotate(135deg);
 }
 
 .arrow-next {
-  position: absolute;
-  top: 50%;
   right: 15px;
   transform: translateY(-50%) rotate(-45deg);
 }
@@ -73,6 +74,7 @@
 
 .section-description {
   padding: 41px;
+  z-index: 1;
 }
 
 .section-description__headline {
@@ -134,7 +136,7 @@
   padding: 9px 13px;
   border: none;
   font-size: 16px;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   color: rgb(235, 235, 235);
   font-weight: bold;
   text-transform: uppercase;
@@ -148,7 +150,7 @@
   color: rgb(237, 50, 55);
   background-color: rgb(235, 235, 235);
   /* outline: 1px solid rgb(206, 206, 206); */
-  box-shadow: -3.5px 3.5px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: -3.5px 3.5px 0px 0px rgba(0, 0, 0, 0.12);
 }
 
 .button__description-button:before {
@@ -237,40 +239,39 @@
 }
 
 .expandable-panel__content {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 0px;
-  overflow: hidden;
+  height: 0;
+  overflow: hidden; 
   width: 95%;
   margin: 0 auto;
   border-radius: 5px;
-  transition: height 0.5s;
-  background: url(http://placekitten.com/g/600/300);
+  transition: transform 0.5s;
   color: rgb(236, 236, 236);
 }
 
-.expandable-panel__content_first-background {
-  background: url("../img/save_doggy.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.expandable-panel__image {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
 }
 
-.expandable-panel__content_second-background {
-  background: url(http://placekitten.com/g/600/300);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.expandable-panel__content_color {
   color: rgb(237, 50, 55);
 }
 
 #toggle__first-part:checked ~ .expandable-panel__content {
-  height: 400px;
+  height: 100%;
+
+  /* min-height: 400px; */
 }
 
 #toggle__second-part:checked ~ .expandable-panel__content {
-  height: 400px;
+  height: 100%;
+    /* min-height: 400px; */
 }
 
 @media screen and (max-width: 1050px) {
