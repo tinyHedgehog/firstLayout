@@ -68,16 +68,18 @@
   transition: 0.5s;
 }
 
-.community__more-info-link:hover {
-  color: rgb(237, 50, 55);
-}
-
 .community__image_community {
   background-image: url("../img/community.png");
 }
 
 .community__image_issue {
   background-image: url("../img/issue.png");
+}
+
+@media screen and (min-width: 980px) {
+  .community__more-info-link:hover {
+    color: rgb(237, 50, 55);
+  }
 }
 
 @media screen and (max-width: 980px) {

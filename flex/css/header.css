@@ -37,10 +37,6 @@
   transition: 0.5s ease-in-out;
 }
 
-.header__navigation-button:hover {
-  border-color: rgb(237, 50, 55);
-}
-
 .header__navigation-link {
   display: inline-block;
   padding: 9px 0 12px 0;
@@ -49,16 +45,11 @@
   transition: 0.5s ease-in-out;
 }
 
-.header__navigation-link:hover {
-  color: rgb(237, 50, 55);
-}
-
 .menu-button {
   display: none;
   position: absolute;
   top: 15%;
   left: 5%;
-  /* display: inline-block; */
   cursor: pointer;
 }
 
@@ -72,6 +63,16 @@
 
 input[type="checkbox"] {
   display: none;
+}
+
+@media screen and (min-width: 980px) {
+  .header__navigation-button:hover {
+    border-color: rgb(237, 50, 55);
+  }
+
+  .header__navigation-link:hover {
+    color: rgb(237, 50, 55);
+  }
 }
 
 @media screen and (max-width: 980px) {

@@ -42,10 +42,6 @@
   transition: transform 0.5s;
 }
 
-.article__image:hover {
-  transform: scale(1.15);
-}
-
 .article__description {
   font-size: 14px;
   margin: 0 0 23px;
@@ -59,6 +55,12 @@
 .article__more-info_bg-color-and-position {
   margin: 0 0 0 28px;
   background-color: rgb(226, 226, 226);
+}
+
+@media screen and (min-width: 980px) {
+  .article__image:hover {
+    transform: scale(1.15);
+  }
 }
 
 @media screen and (max-width: 980px) {
