@@ -68,6 +68,7 @@
   background-color: rgb(235, 235, 235);
   color: rgb(0, 0, 0);
   transition: 0.5s;
+  padding-right: 24px;
 }
 
 .article__more-info-icon {
