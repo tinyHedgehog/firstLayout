@@ -7,14 +7,15 @@
   padding: 0;
 }
 
-html,
-body,
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   background-image: url("../img//site_background.png");
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 5px;
+  padding-top: 94px;
 }
 
 .content {
@@ -24,6 +25,7 @@ body,
   max-width: 1230px;
   background-color: rgba(235, 235, 235, 1);
   border-radius: 5px;
+  width: 100%;
 }
 
 .footer {
@@ -35,15 +37,9 @@ body,
   line-height: 1.6;
 }
 
-.wrapper {
-  font-family: "Source Sans Pro", sans-serif;
-  border-radius: 5px;
-  margin-top: 94px;
-}
-
 @media screen and (max-width: 980px) {
   .wrapper {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 
   .content {
