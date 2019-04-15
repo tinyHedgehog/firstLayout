@@ -58,7 +58,7 @@
 .article__more-info-link {
   display: inline-block;
   border: none;
-  max-width: 100px;
+  min-width: 100px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
@@ -66,11 +66,17 @@
   text-decoration: none;
   letter-spacing: 1px;
   background-color: rgb(235, 235, 235);
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.article__more-info-icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
   background-image: url("../img/right_arrow.png");
   background-repeat: no-repeat;
   background-position: 100%;
-  color: rgb(0, 0, 0);
-  transition: 0.5s;
 }
 
 .article__more-info_bg-color-and-position {
