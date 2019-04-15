@@ -8,6 +8,8 @@
 }
 
 .article {
+  display: flex;
+  flex-direction: column;
   width: calc(100% / 4.55);
   min-height: 420px;
   border-radius: 5px 0 5px 5px;
@@ -43,6 +45,7 @@
 }
 
 .article__description {
+  flex-grow: 1;
   font-size: 14px;
   margin: 0 0 23px;
   line-height: 1.6;
@@ -55,7 +58,7 @@
 .article__more-info-link {
   display: inline-block;
   border: none;
-  min-width: 100px;
+  max-width: 100px;
   text-align: left;
   font-size: 16px;
   font-weight: bold;
