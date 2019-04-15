@@ -1,0 +1,162 @@
+.header {
+  margin-bottom: 36px;
+}
+
+.header__logo {
+  position: relative;
+  bottom: 46px;
+  max-width: 260px;
+  min-height: 105px;
+  padding: 29px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(235, 235, 235, 1);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  box-shadow: -9px 9px 1px rgba(155, 155, 155, 0.3);
+  user-select: none;
+}
+
+.header__navigation-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 3px;
+}
+
+.header__navigation-button {
+  text-transform: uppercase;
+  margin: 0 18px;
+  border-top: 1px solid rgba(210, 210, 210, 1);
+  border-bottom: 1px solid rgba(210, 210, 210, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.header__navigation-link {
+  display: inline-block;
+  padding: 9px 0 12px 0;
+  text-decoration: none;
+  color: rgb(155, 155, 155);
+  transition: 0.5s ease-in-out;
+}
+
+.menu-button {
+  display: none;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  cursor: pointer;
+}
+
+.menu-button__bars {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (min-width: 980px) {
+  .header__navigation-button:hover {
+    border-color: rgb(237, 50, 55);
+  }
+
+  .header__navigation-link:hover {
+    color: rgb(237, 50, 55);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(235, 235, 235, 1);
+    border-bottom: 1px solid black;
+    z-index: 5;
+  }
+
+  .header__logo {
+    display: inline-block;
+    bottom: 0;
+    padding: 0;
+    box-shadow: none;
+    margin: 10px;
+    min-height: 0;
+  }
+
+  .header__navigation {
+    position: absolute;
+    height: 100vh;
+    width: 80%;
+    background-color: rgba(235, 235, 235, 1);
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+  }
+
+  .header__navigation-list {
+    flex-direction: column;
+  }
+
+  .header__navigation-button {
+    display: block;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .header__navigation-button:last-child {
+    border-bottom: 1px solid rgba(210, 210, 210, 1);
+  }
+
+  .menu-button {
+    display: inline-block;
+    position: absolute;
+    top: 21%;
+    left: 93.5%;
+  }
+
+  input[type="checkbox"]:checked ~ .header__navigation {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 80%;
+    background-color: rgba(235, 235, 235, 1);
+    transform: translateX(0);
+    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(235, 235, 235, 1);
+    border-bottom: 1px solid black;
+    z-index: 5;
+  }
+
+  .header__logo {
+    display: inline-block;
+    bottom: 0;
+    padding: 0;
+    box-shadow: none;
+    margin: 10px;
+    min-height: 0;
+  }
+
+  .menu-button {
+    position: absolute;
+    top: 21%;
+    left: 85%;
+  }
+}
